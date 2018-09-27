@@ -18,7 +18,9 @@
 ## 三、Song_lab task
 1. [2018.9.20_Boxing.docx](2018.9.20_boxing.docx)
 2. [2018.9.20_Hypnosis.docx](2018.9.20_hypnosis.docx)
-2. [2018.9.23_wangrui.docx](2018.9.23_wangrui.docx)
+3. [2018.9.23_wangrui.docx](2018.9.23_wangrui.docx)
+## 四 2018_IC_Book
+1. [Table.md](table.md)
 
 ## PCB plate making
 1. [PCB_board.docx](pcb_board.docx)
