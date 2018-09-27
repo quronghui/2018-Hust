@@ -1,18 +1,26 @@
-[TOC]
-# Schedule
+<!-- TOC -->
 
+- [1. Schedule](#1-schedule)
+- [2. Learning Notes](#2-learning-notes)
+    - [2.1. 第一章 计算机概要与技术](#21-第一章-计算机概要与技术)
+        - [2.1.1. Proper Noun](#211-proper-noun)
+        - [2.1.2. Conception](#212-conception)
+        - [2.1.3. 程序入门概念](#213-程序入门概念)
+
+<!-- /TOC -->
+# 1. Schedule
 |Dateline|start time|end time|
 |:-:|:-:|:-:|
 |2018/9/27|14:30||
 
-# Learning Notes
-## 第一章 计算机概要与技术 
-### 1. Proper Noun
+# 2. Learning Notes
+## 2.1. 第一章 计算机概要与技术 
+### 2.1.1. Proper Noun
 |Full name|中文|acronym|
 |:-:|:-:|:-:|
 |personal mobile device||PMD|
 |Warehouse scale computer|巨型数据中心|WSC|
-### 2. Conception
+### 2.1.2. Conception
 1. 嵌入式计算机：
     + 嵌入到其他设备中的计算机，一般运行预定义的一个或者一组应用程序。
 2. 理解程序的性能：
@@ -26,7 +34,7 @@
 6. 通过冗余提高可靠性
     + 使用冗余部件提高系统的可靠性，并可以帮助检测错误。
 
-### 3. 程序入门概念
+### 2.1.3. 程序入门概念
 1. 应用软件-->系统软件-->硬件执行
 2. 系统软件
     + 提供常用的服务软件：操作系统，编译程序，加载程序和汇编程序。
@@ -38,5 +46,3 @@
 + 汇编程序：将指令由助记符形式翻译成二进制形式的程序
 + 汇编语言：以助记符形式表示的机器指令；
 + 机器语言：以二进制形式表示的机器指令
-
-[TOC]
