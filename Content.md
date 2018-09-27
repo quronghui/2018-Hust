@@ -7,7 +7,7 @@
 3. [A33_Coreboard.md](a33_Coreboard.md)
 
 ## 二、EPIC files
-1. [EPIC_2018_buy_list.md](epic_2018_buy_list.md)
+1. [2018_AIWAC_files/EPIC_2018_buy_list.md](2018_aiwac_files/epic_2018_buy_list.md)
 2. [EPIC_2018_task.md](epic_2018_task.md)
 3. [EPIC_ADS1299.md](epic_ads1299.md)
 4. [EPIC_Capacitance and Inductance effect.md](epic_capacitance_and_inductance_effect.md)
