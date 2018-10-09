@@ -1,22 +1,24 @@
 <!-- TOC -->
 
-- [1. Schedule](#1-schedule)
-- [2. Learning Notes](#2-learning-notes)
-    - [2.1. 第一章 计算机概要与技术](#21-第一章-计算机概要与技术)
-        - [2.1.1. Proper Noun](#211-proper-noun)
-        - [2.1.2. Conception](#212-conception)
-        - [2.1.3. 程序入门概念](#213-程序入门概念)
+- [Schedule](#schedule)
+- [Learning Notes](#learning-notes)
+    - [第一章 计算机概要与技术](#第一章-计算机概要与技术)
+        - [Proper Noun](#proper-noun)
+        - [Conception](#conception)
+        - [程序入门概念](#程序入门概念)
+        - [硬件入门](#硬件入门)
 
 <!-- /TOC -->
-# 1. Schedule
+# Schedule
 |Dateline|start time|end time|
 |:-:|:-:|:-:|
 |2018/9/27|14:30|16:00|
 |2018/9/27|21:00|22:00|
+|2018/10/9|8:45|9:45|
 
-# 2. Learning Notes
-## 2.1. 第一章 计算机概要与技术 
-### 2.1.1. Proper Noun
+# Learning Notes
+## 第一章 计算机概要与技术 
+### Proper Noun
 |Full name|中文|acronym|
 |:-:|:-:|:-:|
 |personal mobile device||PMD|
@@ -25,7 +27,10 @@
 |active matrix display|动态矩阵显示|
 |Integrated circuit|集成电路|
 |Central peocessor unit|中央处理单元|CPU|
-### 2.1.2. Conception
+|dynamic random access memory|动态随机存储器|DRAM
+|static random access memory|静态随机存储器|SRAM -- 价格高于DRAM
+|very large-scale integrated circuit|超大规模集成电路|VLSI
+### Conception
 1. 嵌入式计算机：
     + 嵌入到其他设备中的计算机，一般运行预定义的一个或者一组应用程序。
 2. 理解程序的性能：
@@ -39,7 +44,7 @@
 6. 通过冗余提高可靠性
     + 使用冗余部件提高系统的可靠性，并可以帮助检测错误。
 
-### 2.1.3. 程序入门概念
+### 程序入门概念
 1. 应用软件-->系统软件-->硬件执行
 2. 系统软件
     + 提供常用的服务软件：操作系统，编译程序，加载程序和汇编程序。
@@ -60,3 +65,12 @@
     + 逻辑上分为两部分：数据通路和控制器
     + 数据通路：负责完成算数运算
     + 控制器：负责指导数据通路
+4. 内存
+    + 内存：程序运行时的存储空间，
+    + 由多片DRAM组成
+5. 缓存 cache memory --- SRAM
+    + 处理其内部的另外一种存储器
+    + 小而快的存储效应，作为DRAM的缓冲
+6. 抽象之一：硬件和底层软件的接口 - P15
+    + 该抽象被命名为计算机d额**指令集体系结构** -- 体系结构
+    + 硬件的实现方法必须依照体系结构的抽样

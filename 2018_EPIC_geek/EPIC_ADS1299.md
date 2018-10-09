@@ -1,4 +1,60 @@
-# ADS1299知识储备
+# ADS1299手册内容
+<!-- TOC -->
+
+- [ADS1299手册内容](#ads1299手册内容)
+    - [1、电气特性](#1电气特性)
+        - [1.1 电压和电流](#11-电压和电流)
+        - [电压特性测试](#电压特性测试)
+        - [1.2 electrical characteristics](#12-electrical-characteristics)
+        - [1.3 SYSTEM MONITORS](#13-system-monitors)
+        - [1.3 [SPS](https://blog.csdn.net/iini01/article/details/80084124)](#13-spshttpsblogcsdnnetiini01articledetails80084124)
+    - [2. ADC特性](#2-adc特性)
+        - [2.1 ADC特性--[差模、共模信号、公模抑制比](https://blog.csdn.net/augusdi/article/details/17204255)](#21-adc特性--差模共模信号公模抑制比httpsblogcsdnnetaugusdiarticledetails17204255)
+            - [共模抑制比结论](#共模抑制比结论)
+            - [公模信号](#公模信号)
+            - [差模信号](#差模信号)
+        - [2.2 ADC特性--[电源抑制比DC-PSRR](https://blog.csdn.net/gang_life/article/details/50363131)](#22-adc特性--电源抑制比dc-psrrhttpsblogcsdnnetgang_lifearticledetails50363131)
+        - [2.3 ADC特性--[总谐波失真THD](https://blog.csdn.net/wordwarwordwar/article/details/53208503)](#23-adc特性--总谐波失真thdhttpsblogcsdnnetwordwarwordwararticledetails53208503)
+        - [2.4 ADC特性--[INL非线性度]()](#24-adc特性--inl非线性度)
+    - [3. 参数测量信息](#3-参数测量信息)
+        - [3.1 噪声测量(P16)](#31-噪声测量p16)
+    - [4. Anlog Input](#4-anlog-input)
+        - [4.1 BIAS(patient bias drive block )](#41-biaspatient-bias-drive-block-)
+        - [4.2 特征描述](#42-特征描述)
+        - [4.3 寄存器配置_P20](#43-寄存器配置_p20)
+        - [4.4 Anlog Input](#44-anlog-input)
+        - [4.5 PGA and bandwidth setting](#45-pga-and-bandwidth-setting)
+        - [4.6 Input Common-Mode Range ----P23](#46-input-common-mode-range-----p23)
+        - [4.7 参考噪声VREFP是不影响系统噪声的](#47-参考噪声vrefp是不影响系统噪声的)
+    - [5. Digitial Funcation](#5-digitial-funcation)
+        - [5.1 Digital Filter](#51-digital-filter)
+        - [5.2 Sinc filter---尽量找到图形的关系](#52-sinc-filter---尽量找到图形的关系)
+        - [5.3 Clock-- P27](#53-clock---p27)
+        - [5.4 GPIO](#54-gpio)
+        - [5.5 MUXn[2:0]](#55-muxn20)
+        - [5.6 BIAS Driver Signal](#56-bias-driver-signal)
+        - [5.7 电极的阻抗检测](#57-电极的阻抗检测)
+        - [5.8 DC Lead-OFF DC的开始](#58-dc-lead-off-dc的开始)
+        - [5.9 AC Lead-off](#59-ac-lead-off)
+        - [5.10 BIAS lead off detaction at power-on](#510-bias-lead-off-detaction-at-power-on)
+        - [5.11 BIAS Drive](#511-bias-drive)
+    - [6、设备工作条件](#6设备工作条件)
+        - [6.1 Start](#61-start)
+        - [6.2 DRDY pin -->数据连续阅读](#62-drdy-pin---数据连续阅读)
+        - [6.3  Single-Shot Mode（数据间断阅读）](#63--single-shot-mode数据间断阅读)
+        - [6.4 SPI interface](#64-spi-interface)
+        - [6.5 SPI Command Definitions](#65-spi-command-definitions)
+        - [6.6 Register Map --P44页](#66-register-map---p44页)
+    - [7. Applications and Implementation](#7-applications-and-implementation)
+        - [7.1 Applications](#71-applications)
+            - [7.1.1 Unused Inputs and Outputs](#711-unused-inputs-and-outputs)
+            - [7.1.2 信号处理流程](#712-信号处理流程)
+            - [7.1.3 Establishing the Input Common-Mode](#713-establishing-the-input-common-mode)
+- [ADS1299EEG-FE](#ads1299eeg-fe)
+    - [关于ADS1299EEG-FE演示版的资料](#关于ads1299eeg-fe演示版的资料)
+    - [ADS1299--Ti论坛](#ads1299--ti论坛)
+
+<!-- /TOC -->
 ## 1、电气特性
 ### 1.1 电压和电流
 |Power|value|
@@ -221,3 +277,10 @@ electrode combination to be chosen in order to generate the patient drive signal
 #### 7.1.3 Establishing the Input Common-Mode
 + BIAS electrode：工作时，作为一个参考驱动输入，使得电压值达到要求
 + BIAS 电路是需要连接的，但是还是没有确定，用同一个电极的输入
+
+# ADS1299EEG-FE
++ Front-End
+## 关于ADS1299EEG-FE演示版的资料
++ [ADS1299EEG-FE](http://www.eeboard.com/ziliao/ads1299eeg-fe%E6%80%A7%E8%83%BD%E6%BC%94%E7%A4%BA%E5%A5%97%E4%BB%B6/)
+## ADS1299--Ti论坛
++ [Ti论坛](https://e2echina.ti.com/search?q=ads1299)

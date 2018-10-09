@@ -13,7 +13,7 @@
 |:-:|:-:|:-:|
 |Supply Voltage|VDD|3.75-6v|
 |UVLO Start Threshold|V_Start|3.3-3.6v
-|UVLO Stop Threshold|V_Stope|3.2-3.5
+|UVLO Stop Threshold|V_Stope|3.2-3.5v
 
 
 
