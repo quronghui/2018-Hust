@@ -23,14 +23,17 @@
 ## 四 2018_IC_Book
 1. [Table.md](table.md)
 
-## PCB plate making
+## 五 PCB plate making
 1. [PCB_board.docx](pcb_board.docx)
 2. [SCH_PCB.vsdx](sch_pcb.vsdx)
 3. [AD16_Learning.docx](ad16_learning.docx)
 
-## Ti Request
+## 六 Ti Request
 1. [Ti-sample request.docx](ti-sample_request.docx)
 
-## Material Management
+## 七 Material Management
 1. [Bill of Material.pdf](bill_of_material.pdf)
 2. [Epic_material_management.xlsx](epic_material_management.xlsx)
+
+## 八 quronghui_Table
+1. [Class and rest](class_and_rest.xlsx)
