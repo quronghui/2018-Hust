@@ -50,9 +50,12 @@
             - [7.1.1 Unused Inputs and Outputs](#711-unused-inputs-and-outputs)
             - [7.1.2 信号处理流程](#712-信号处理流程)
             - [7.1.3 Establishing the Input Common-Mode](#713-establishing-the-input-common-mode)
+    - [8. 采集前端的电容电阻匹配](#8-采集前端的电容电阻匹配)
 - [ADS1299EEG-FE](#ads1299eeg-fe)
     - [关于ADS1299EEG-FE演示版的资料](#关于ads1299eeg-fe演示版的资料)
     - [ADS1299--Ti论坛](#ads1299--ti论坛)
+    - [OPENBCI -- 采集套件](#openbci----采集套件)
+    - [MCU的处理功能](#mcu的处理功能)
 
 <!-- /TOC -->
 ## 1、电气特性
@@ -64,6 +67,8 @@
 |VREFP|4.5V|
 |Curite_P11页|ads1299-6 I(Avdd)=5.57mA < 10mA| 
 |Curite|ads1299-6 (DVDD = 3.3 V) I(Dvdd)=0.66mA|
++ The internal reference generates a low noise 4.5 V internal voltage when enabled and the internal oscillator
+generates a 2.048-MHz clock when enabled
 ### 电压特性测试
 |EEG1.0|Power|value|EEG2.0|Power|value|
 |:-:|:-:|:-:|:-:|:-:|:-:|
@@ -277,6 +282,8 @@ electrode combination to be chosen in order to generate the patient drive signal
 #### 7.1.3 Establishing the Input Common-Mode
 + BIAS electrode：工作时，作为一个参考驱动输入，使得电压值达到要求
 + BIAS 电路是需要连接的，但是还是没有确定，用同一个电极的输入
+## 8. 采集前端的电容电阻匹配
++ [参考ADS1299-FE的设计](http://tech.hqew.com/fangan_726253)
 
 # ADS1299EEG-FE
 + Front-End
@@ -284,3 +291,10 @@ electrode combination to be chosen in order to generate the patient drive signal
 + [ADS1299EEG-FE](http://www.eeboard.com/ziliao/ads1299eeg-fe%E6%80%A7%E8%83%BD%E6%BC%94%E7%A4%BA%E5%A5%97%E4%BB%B6/)
 ## ADS1299--Ti论坛
 + [Ti论坛](https://e2echina.ti.com/search?q=ads1299)
+## OPENBCI -- 采集套件
++ [OPENBCI](https://openbci.com/)
+## MCU的处理功能
++ [去除工频干扰](https://wenku.baidu.com/view/1b499eb73186bceb19e8bbe8.html)
++ 脑电信号非常微弱，为微伏量级的信号，功率较大的工频干扰成分严重影响到纯净脑电信号的提取及分析，所以必须加入陷波器。
++ 而数字陷波器设计通过软件配置达到设定或改变陷波频率的目的（工频是50或60Hz），且实时性能够满足脑电采集的需要。
++ 同理，数字带通滤波器可通过软件配置灵活调整滤波器的截止频率。
