@@ -53,6 +53,8 @@
     - [8. 采集前端的电容电阻匹配](#8-采集前端的电容电阻匹配)
 - [ADS1299EEG-FE](#ads1299eeg-fe)
     - [关于ADS1299EEG-FE演示版的资料](#关于ads1299eeg-fe演示版的资料)
+        - [手册的相关参考](#手册的相关参考)
+        - [有相关的原理图](#有相关的原理图)
     - [ADS1299--Ti论坛](#ads1299--ti论坛)
     - [OPENBCI -- 采集套件](#openbci----采集套件)
     - [MCU的处理功能](#mcu的处理功能)
@@ -289,6 +291,9 @@ electrode combination to be chosen in order to generate the patient drive signal
 + Front-End
 ## 关于ADS1299EEG-FE演示版的资料
 + [ADS1299EEG-FE](http://www.eeboard.com/ziliao/ads1299eeg-fe%E6%80%A7%E8%83%BD%E6%BC%94%E7%A4%BA%E5%A5%97%E4%BB%B6/)
+### 手册的相关参考
++ Analog Input : 他们的输入参考是地，和手册上连接SRB1不一样
+### 有相关的原理图
 ## ADS1299--Ti论坛
 + [Ti论坛](https://e2echina.ti.com/search?q=ads1299)
 ## OPENBCI -- 采集套件
