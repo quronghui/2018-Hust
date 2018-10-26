@@ -48,7 +48,10 @@
 + 双向 4 通道高速 ESD 保护器件
 + 采用第二种连接方式；
 + 电路中保持了两种连接方式，通过软件配置进行选择 --> 这种思想不错
-#### [CAY16-3322F4LF](http://www.mmic.net.cn/cay16-4992f4lf_datasheet_485147.html)
++ [购买链接](https://item.taobao.com/item.htm?spm=a230r.1.14.21.386e6cdbIWeOqt&id=578983690696&ns=1&abbucket=10#detail)
+#### [CAY16-3322F4LF](https://pdf1.alldatasheet.com/datasheet-pdf/view/597832/BOURNS/CAY16-49R9F4LF.html)
++ [命名规则](https://wenku.baidu.com/view/9750d359f01dc281e53af097.html)
++ 
 + 电阻阵列
 + 阻值：2.2k
 #### [CKCL44X7R1H102M085AA](https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CKCL44X7R1H102M085AA)
@@ -56,7 +59,7 @@
 + 容值：102
 ### BLE
 + 蓝牙模块
-+ [BLE RFD22301](https://www.findic.com/jiage/rfd22301-qzEvwjBxQ.html#doc_tab)
++ [BLE RFD22301](https://pdf1.alldatasheet.com/datasheet-pdf/view/816191/TDK/CKCL44X7R1H102M085AA_16.html) 
 ### [ATMEGA328P-AU](https://www.alldatasheet.com/view.jsp?Searchword=ATMEGA328P-AU)
 + 主控芯片
 

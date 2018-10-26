@@ -14,7 +14,11 @@
 |Supply Voltage|VDD|3.75-6v|
 |UVLO Start Threshold|V_Start|3.3-3.6v
 |UVLO Stop Threshold|V_Stope|3.2-3.5v
-
+### 1.3 串联充电测试
+|name|Pin|Value
+|:-:|:-:|:-:|
+|充电时间16：38|2号电池|3.94|
+||1号电池|1.47|
 
 
 

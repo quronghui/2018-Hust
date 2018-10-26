@@ -51,6 +51,9 @@
             - [7.1.2 信号处理流程](#712-信号处理流程)
             - [7.1.3 Establishing the Input Common-Mode](#713-establishing-the-input-common-mode)
     - [8. 采集前端的电容电阻匹配](#8-采集前端的电容电阻匹配)
+    - [9、ADS1299多设备级联](#9ads1299多设备级联)
+        - [引脚连接](#引脚连接)
+        - [多设备的数据读取](#多设备的数据读取)
 - [ADS1299EEG-FE](#ads1299eeg-fe)
     - [关于ADS1299EEG-FE演示版的资料](#关于ads1299eeg-fe演示版的资料)
         - [手册的相关参考](#手册的相关参考)
@@ -286,6 +289,35 @@ electrode combination to be chosen in order to generate the patient drive signal
 + BIAS 电路是需要连接的，但是还是没有确定，用同一个电极的输入
 ## 8. 采集前端的电容电阻匹配
 + [参考ADS1299-FE的设计](http://tech.hqew.com/fangan_726253)
+## 9、ADS1299多设备级联
+### 引脚连接
+|Pin|Link|Reason|Effect
+|:-:|:-:|:-:|:-:|
+|外围电路|各级连接各自的|
+|DIN|级联MOSI|ADS1299 Datasheet
+|CLK|级联|ADS1299 Datasheet|内部时钟统一
+|START|级联|ADS1299 Datasheet
+|/CS|级联|ADS1299 Datasheet
+|SCLK|级联|ADS1299 Datasheet
+|DOUT|级联到DAISY_IN|ADS1299 Datasheet
+|DAISY_IN|级联|最后一个设备接地
+|Reserved|接地
+||
+|/PWDN|上拉到DVDD|OPENBCI|Power-down, active low.不用开省电模式；
+||EEG_V3.0：选择级联，用过主控进行控制|
+|/RESET|级联|OPENBCI Daisy Bus|
+|/DRDY|没有看到级联|？？|占时只连接第一个Device
+||
+|CLKSEL|ADS1299--FE / OPENBCI|上拉到高电平
+||
+|根据OPENBCI的级联方式|
+|BIASREF|接地|
+|BIASINV|级联|ADS1299 Datasheet
+|BIASIN|
+|BIASOUT|
+### 多设备的数据读取
++ DRDY：Data ready, active low。读数据的操作好像是按照顺序的吗？？
+    + 主控控制啥时候读取数据就行，和设备本身才数据无关，因此其余的设备可以去掉
 
 # ADS1299EEG-FE
 + Front-End
